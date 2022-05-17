@@ -1,0 +1,8 @@
+* Angular 11 is an open source JavaScript MVC framework for Web-App.
+* Makes HTML dynamic.
+* Important that Angular 11 uses npm to achive prerequisits. Both Node.js and npm are needed.
+* Install Angular CLI [Angular Command Line Interface]. This CLI will help you to install packages required and provided by Angular.
+*** COMMAND [npm install -g @angular/cli@latest]. 
+* Package.json is the file which is used by angular to set all packages of your project.
+* To create new app [ng new <app name>].
+* 
