@@ -1,0 +1,50 @@
+body{
+    background-color: #2E0249;
+    height: 100vh;
+}
+.main-heading{
+    text-align: center;
+    font-family: 'Monospace';
+    color: #ffffffc7;
+}
+
+.main-container.container-fluid{
+    width: 45%;
+    padding-left: 2.5%;
+    background-color: #80808057;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    border-radius: 13px;
+    padding-bottom: 1.5%;
+}
+
+.display.form-control{
+    text-align: right;
+}
+
+.each-col.col.col-lg-12{
+    padding-left: 13.5%;
+    padding-right: 1.5%;
+}
+
+.number-btn.btn.btn-light{
+    width: 17%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.sign-btn.btn.btn-light{
+    width: 20%;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
