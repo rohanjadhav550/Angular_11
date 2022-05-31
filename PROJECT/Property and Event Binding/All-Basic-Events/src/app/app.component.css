@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    margin-top: 2%;
+}
+
+.click-row.row{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.click-btn.btn.btn-success
+{
+    width: 100%;
+}
+
+.click-input.form-control{
+    text-align: center;
+}
+
+.scroll-list{
+    list-style: none;
+    border: 1px solid red;
+    height: 50%;
+    overflow-y: scroll; 
+}

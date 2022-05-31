@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Basic Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="click-row row">
+      <h1>Mouse Click Event</h1>
+      <div class="click-col col col-sm-6">
+        <button (click)="clickEventFun($event)" class="click-btn btn btn-success">Click</button>
+      </div>
+      <div class="click-input col col-sm-6">
+        <input disabled type="text" class="click-input form-control" value={{clickNum}}>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Mouse Double Click Event</h1>
+      <div class="click-col col col-sm-6">
+        <button (dblclick)="doubleClick($event)" class="click-btn btn btn-success">Double Click</button>
+      </div>
+      <div class="click-input col col-sm-6">
+        <input disabled type="text" class="click-input form-control" value={{doubleClickNum}}>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Key Up and Down Event</h1>
+      <div class="click-col col col-sm-6">
+        <input (keydown)="keyDownFunction($event)" type="text" class="click-input form-control" placeholder="Key Down Event" value={{keyDownVar}}>
+      </div>
+      <div class="click-col col col-sm-6">
+        <input (keyup)="keyUpFunction($event)" type="text" class="click-input form-control" placeholder="Key Up Event" value={{keyUpVar}}>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Blure Event</h1>
+      <div class="click-col col col-sm-6">
+        <input (blur)="blurEventFun()" class="form-control" placeholder="click mouse then click outside this textbox">
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control">Blur Event Count : {{blurVal}}</label>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Focus Event</h1>
+      <div class="click-col col col-sm-6">
+        <input type="text" class="form-control" (focus)="focusEventFun()" placeholder="click here">
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control">Focus Event Count : {{focusVal}}</label>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Scroll Event</h1>
+      <div class="click-col col col-sm-6">
+        <ul (scroll)="scrollEventFun()" class="scroll-list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control">Scroll Event Count : {{scrollVal}}</label>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Mouse Up Events</h1>
+      <div class="click-col col col-sm-6">
+        <label class="form-control" (mouseup)="mouseUpFun()">Click Here and Leave</label>
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control">Mouse Up Event Count : {{mouseUpVal}}</label>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Mouse Down Events</h1>
+      <div class="click-col col col-sm-6">
+        <label class="form-control" (mousedown)="mouseDownFun()">Click here</label>
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control">Mouse Down Event Count : {{mouseDownVal}}</label>
+      </div>
+    </div>
+    <div class="click-row row">
+      <h1>Mouse Enter and Leave Events</h1>
+      <div class="click-col col col-sm-6">
+        <label class="form-control" (mouseenter)="mouseEnterEvent()">Mouse Enter Count : {{mouseEnterVal}}</label>
+      </div>
+      <div class="click-col col col-sm-6">
+        <label class="form-control" (mouseleave)="mouseLeaveEvent()">Mouse Leave Count : {{mouseLeaveVal}}</label>
+      </div>
+    </div><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
