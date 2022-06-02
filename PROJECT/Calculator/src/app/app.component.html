@@ -10,32 +10,36 @@
     <br><h3 class="main-heading">Basic Calculator</h3><br>
     <div class="main-container container-fluid">
       <div class="display-panel row">
-        <input disabled type="number" placeholder="Results" class="display form-control">
+        <input type="text" [value]="result" class="display form-control">
       </div>
       <div class="btn-row row">
         <div class="each-col col col-lg-12">
-          <button class="number-btn btn btn-light">7</button>
-          <button class="number-btn btn btn-light">8</button>
-          <button class="number-btn btn btn-light">9</button>
-          <button class="sign-btn btn btn-light">/</button>
+          <button (click)="cleanAll()" class="number-btn btn btn-light">C</button>
+          <button (click)="removePrevious()" class="back-button btn btn-light"><</button>
         </div>
         <div class="each-col col col-lg-12">
-          <button class="number-btn btn btn-light">4</button>
-          <button class="number-btn btn btn-light">5</button>
-          <button class="number-btn btn btn-light">6</button>
-          <button class="sign-btn btn btn-light">x</button>
+          <button (click)="displayClicked($event)" value="7" class="number-btn btn btn-light">7</button>
+          <button (click)="displayClicked($event)" value="8" class="number-btn btn btn-light">8</button>
+          <button (click)="displayClicked($event)" value="9" class="number-btn btn btn-light">9</button>
+          <button (click)="displayClicked($event)" value="/" class="sign-btn btn btn-light">/</button>
         </div>
         <div class="each-col col col-lg-12">
-          <button class="number-btn btn btn-light">1</button>
-          <button class="number-btn btn btn-light">2</button>
-          <button class="number-btn btn btn-light">3</button>
-          <button class="sign-btn btn btn-light">-</button>
+          <button (click)="displayClicked($event)" value="4" class="number-btn btn btn-light">4</button>
+          <button (click)="displayClicked($event)" value="5" class="number-btn btn btn-light">5</button>
+          <button (click)="displayClicked($event)" value="6" class="number-btn btn btn-light">6</button>
+          <button (click)="displayClicked($event)" value="X" class="sign-btn btn btn-light">x</button>
         </div>
         <div class="each-col col col-lg-12">
-          <button class="number-btn btn btn-light">0</button>
-          <button class="number-btn btn btn-light">.</button>
-          <button class="number-btn btn btn-light">+</button>
-          <button class="sign-btn btn btn-light">=</button>
+          <button (click)="displayClicked($event)" value="1" class="number-btn btn btn-light">1</button>
+          <button (click)="displayClicked($event)" value="2" class="number-btn btn btn-light">2</button>
+          <button (click)="displayClicked($event)" value="3" class="number-btn btn btn-light">3</button>
+          <button (click)="displayClicked($event)" value="-" class="sign-btn btn btn-light">-</button>
+        </div>
+        <div class="each-col col col-lg-12">
+          <button (click)="displayClicked($event)" value="0" class="number-btn btn btn-light">0</button>
+          <button (click)="displayClicked($event)" value="." class="number-btn btn btn-light">.</button>
+          <button (click)="displayClicked($event)" value="+" class="number-btn btn btn-light">+</button>
+          <button (click)="calculate()" class="sign-btn btn btn-light">=</button>
         </div>
       </div>
     </div>

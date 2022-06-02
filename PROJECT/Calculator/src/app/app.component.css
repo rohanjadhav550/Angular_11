@@ -20,6 +20,9 @@ body{
 
 .display.form-control{
     text-align: right;
+    width: 70%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 .each-col.col.col-lg-12{
@@ -41,6 +44,11 @@ body{
     margin-right: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.back-button.btn.btn-light{
+    width: 20%;
+    margin-left: 41%;
 }
 
 input::-webkit-outer-spin-button,
