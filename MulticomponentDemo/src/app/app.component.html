@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Property Binding</title>
+  </head>
+  <body>
+      <!-- this is a button which will show event binding in angular -->
+      <input (keyup)="changeImg($event)" [value]="imgUrl" class="img-change-btn" value="Change Image"><br>
+      <app-post [postImgUrl]="imgUrl"></app-post>
+  </body>
+</html>

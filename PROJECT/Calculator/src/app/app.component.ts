@@ -316,6 +316,7 @@ export class AppComponent {
             this.mulSign = 0;
             this.dividSign = 0;
             this.indexStart = this.result.indexOf('*')-1;
+
             while(this.stateStart==0)
             {
               if(this.result[this.indexStart]=='+' || this.result[this.indexStart]=='-'|| this.result[this.indexStart]=='/'|| this.result[this.indexStart]=='*' || this.indexStart==-1)
@@ -346,7 +347,7 @@ export class AppComponent {
                 this.secondNum = this.secondNum + this.result[this.indexEnd];
                 this.indexEnd++;
               }
-            }  
+            }              
             this.firstNum = parseInt(this.firstNum);
             this.secondNum = parseInt(this.secondNum);
             this.firstNum = this.firstNum * this.secondNum;
@@ -357,33 +358,27 @@ export class AppComponent {
             {
   //convert string to array to perform pop
               this.leftPart = this.result.split('');
-              if(this.leftPart.length==3){
-                this.result = this.firstNum;
-              }
-              else
+              let newIndex = 0;
+              this.rightPart = [];
+              for(let rightIndex=this.result.length-1;rightIndex>this.indexEnd;rightIndex--)
               {
-                let newIndex = 0;
-                this.rightPart = [];
-                for(let rightIndex=this.result.length-1;rightIndex>this.indexEnd;rightIndex--)
-                {
-                  this.rightPart[newIndex] = this.leftPart.pop();
-                  newIndex++;
-                }            
-                while(this.leftPart.length>this.indexStart)
-                {
-                  this.leftPart.pop();
-                }
-    //join left array to make it string
-                this.leftPart = this.leftPart.join('');
-    //place the result after joining the right array
-                this.leftPart = this.leftPart+this.firstNum;
-    //join right array to make it string and attach the left
-                this.rightPart = this.rightPart.reverse();
-                this.rightPart = this.rightPart.join('');
-    //final result after division            
-                this.result = this.leftPart+this.rightPart;
-              }                        
-            }
+                this.rightPart[newIndex] = this.leftPart.pop();
+                newIndex++;
+              }            
+              while(this.leftPart.length>this.indexStart)
+              {
+                this.leftPart.pop();
+              }
+  //join left array to make it string
+              this.leftPart = this.leftPart.join('');
+  //place the result after joining the right array
+              this.leftPart = this.leftPart+this.firstNum;
+  //join right array to make it string and attach the left
+              this.rightPart = this.rightPart.reverse();
+              this.rightPart = this.rightPart.join('');
+  //final result after division            
+              this.result = this.leftPart+this.rightPart;
+            }                        
           }
         }
         else if(this.addSign==1 || this.subSign==1)
