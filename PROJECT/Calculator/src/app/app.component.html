@@ -10,7 +10,7 @@
     <br><h3 class="main-heading">Basic Calculator</h3><br>
     <div class="main-container container-fluid">
       <div class="display-panel row">
-        <input type="text" [value]="result" class="display form-control">
+        <input disabled type="text" [value]="result" class="display form-control">
       </div>
       <div class="btn-row row">
         <div class="each-col col col-lg-12">
@@ -27,7 +27,7 @@
           <button (click)="displayClicked($event)" value="4" class="number-btn btn btn-light">4</button>
           <button (click)="displayClicked($event)" value="5" class="number-btn btn btn-light">5</button>
           <button (click)="displayClicked($event)" value="6" class="number-btn btn btn-light">6</button>
-          <button (click)="displayClicked($event)" value="X" class="sign-btn btn btn-light">x</button>
+          <button (click)="displayClicked($event)" value="*" class="sign-btn btn btn-light">x</button>
         </div>
         <div class="each-col col col-lg-12">
           <button (click)="displayClicked($event)" value="1" class="number-btn btn btn-light">1</button>
