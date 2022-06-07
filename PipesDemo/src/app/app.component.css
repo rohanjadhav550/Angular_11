@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color: rgb(102, 62, 139);
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+strong{
+    color: rgba(250, 8, 8, 0.836);
+}
+
+.json-strong{
+    margin-left: 35%;
+}
+
+.pre-json{
+    margin-left: 45%;
+    width: 20%;
+    margin-right: 0%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pipes</title>
+  </head>
+  <body>
+    <h1>Pipes Demo </h1>
+    <!-- title case pipe -->
+    <h3>TitleCase Pipe</h3>
+    <p><strong>this is the demo of titlecase pipe where, you can see text in brown is having small case from start but name is having uppercase letter at the start : </strong>{{name | titlecase}}</p>
+    <h3>Date Pipe</h3>
+    <p><strong>This is normal JS date format : </strong>{{currentDate}}</p>
+    <p><strong>This is basic date pipe applied without parameters : </strong>{{currentDate | date}}</p>
+    <p><strong>This is Date pipe with parameter of Era [GGGG] : </strong>{{currentDate | date : 'GGGG'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [y] : </strong>{{currentDate | date : 'y'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [yy] : </strong>{{currentDate | date : 'yy'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [yyy] : </strong>{{currentDate | date : 'yyy'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [yyyy] : </strong>{{currentDate | date : 'yyyy'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [Y] : </strong>{{currentDate | date : 'Y'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [YY] : </strong>{{currentDate | date : 'YY'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [YYY] : </strong>{{currentDate | date : 'YYY'}}</p>
+    <p><strong>This is Date pipe with parameter of Year [YYYY] : </strong>{{currentDate | date : 'YYYY'}}</p>
+    <p><strong>This is Date pipe with parameter of Month [M] : </strong>{{currentDate | date : 'M'}}</p>
+    <p><strong>This is Date pipe with parameter of Month [MM] : </strong>{{currentDate | date : 'MM'}}</p>
+    <p><strong>This is Date pipe with parameter of Month [MMM] : </strong>{{currentDate | date : 'MMM'}}</p>
+    <p><strong>This is Date pipe with parameter of Month [MMMM] : </strong>{{currentDate | date : 'MMMM'}}</p>
+    <p><strong>This is Date pipe with parameter of Week [w] : </strong>{{currentDate | date : 'w'}}</p>
+    <p><strong>This is Date pipe with parameter of Week [ww] : </strong>{{currentDate | date : 'ww'}}</p>
+    <p><strong>This is Date pipe with parameter of Week [W] : </strong>{{currentDate | date : 'W'}}</p>
+    <p><strong>This is Date pipe with parameter of Day [d] : </strong>{{currentDate | date : 'd'}}</p>
+    <p><strong>This is Date pipe with parameter of Day [dd] : </strong>{{currentDate | date : 'dd'}}</p>
+    <p><strong>This is Date pipe with parameter of Week Day [E] : </strong>{{currentDate | date : 'E'}}</p>
+    <p><strong>This is Date pipe with parameter of Week Day [EEEE] : </strong>{{currentDate | date : 'EEEE'}}</p>
+    <p><strong>This is Date pipe with parameter of Week Day [EEEEE] : </strong>{{currentDate | date : 'EEEEE'}}</p>
+    <p><strong>This is Date pipe with parameter of Week Day [EEEEEE] : </strong>{{currentDate | date : 'EEEEEE'}}</p>
+    <p><strong>This is Date pipe with parameter of Period [a] : </strong>{{currentDate | date : 'a'}}</p>
+    <p><strong>This is Date pipe with parameter of Period [aaaa] : </strong>{{currentDate | date : 'aaaa'}}</p>
+    <p><strong>This is Date pipe with parameter of Period [aaaaa] : </strong>{{currentDate | date : 'aaaaa'}}</p>
+    <p><strong>This is Date pipe with parameter of Houre 0-12[h] : </strong>{{currentDate | date : 'h'}}</p>
+    <p><strong>This is Date pipe with parameter of Houre 0-12[hh] : </strong>{{currentDate | date : 'hh'}}</p>
+    <p><strong>This is Date pipe with parameter of Houre 0-24[H] : </strong>{{currentDate | date : 'H'}}</p>
+    <p><strong>This is Date pipe with parameter of Houre 0-24[HH] : </strong>{{currentDate | date : 'HH'}}</p>
+    <p><strong>This is Date pipe with parameter of Minute[m] : </strong>{{currentDate | date : 'm'}}</p>
+    <p><strong>This is Date pipe with parameter of Minute[mm] : </strong>{{currentDate | date : 'mm'}}</p>
+    <p><strong>This is Date pipe with parameter of Seconds[s] : </strong>{{currentDate | date : 's'}}</p>
+    <p><strong>This is Date pipe with parameter of Seconds[ss] : </strong>{{currentDate | date : 'ss'}}</p>
+    <h3>Currency Pipe</h3>
+    <p><strong>Currence pipe to set currency icon prefixed standerd output: </strong>{{currency | currency}}</p>
+    <p><strong>Currence pipe to set currency icon prefixed Indian Symbol: </strong>{{currency | currency : 'INR'}}</p>
+    <h3>JSON pipe</h3>
+    <strong class="json-strong">Json format of the object for debugging : </strong><pre class="pre-json">{{car | json}}</pre>
+  </body>
+</html>
