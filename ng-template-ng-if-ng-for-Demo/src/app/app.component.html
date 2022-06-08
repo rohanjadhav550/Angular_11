@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template-If-For-Directives</title>
+  </head>
+  <body>
+    <!-- this is example of template and if directive both go hand in hand -->
+    <h1>This is standerd way of implementing template and if directive click the button below.</h1>
+    <button (click)="dispTemplate()">Click To Display Template</button><br><br>
+    <ng-template [ngIf]="templateFlag">
+      <p>This is in Template directice</p>
+    </ng-template>
+    <!-- shorthand way of implementing the structural directives -->
+    <p *ngIf="templateFlag">This is using shorthand way.</p>
+    <hr>
+    <!-- this is ng-for demo -->
+    <p>This is ng-for directive demo where set of images are displayed from an array</p>
+    <div *ngFor="let img of images;let i=index">
+      <img  [src]="img"><br>
+      <label>{{'Index of the image is: '+i}}</label>
+    </div >
+  </body>
+</html>
