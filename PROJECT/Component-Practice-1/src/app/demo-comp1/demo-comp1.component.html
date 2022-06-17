@@ -1,4 +1,4 @@
-<div class="px-44 py-5 rounded-md mx-96 mt-5 bg-stone-700" [hidden]="!loadComponent()">
+<div [ngClass]="{'animation-zoom':zoomVar}" class="px-44 py-5 rounded-md mx-96 mt-5 bg-stone-700" [hidden]="!loadComponent()">
     <h3 class="text-white mb-5 text-center">User Details</h3>
     <input (keyup)="givenNameEnter($event)" (blur)="placeOldName()" (click)="clearName()" type="text" class="rounded-md text-gray-500 hover:text-black h-10 text-center mb-5" [value]="nameDisplay()">
     <input (keyup)="givenPlaceEntry($event)" (blur)="placeOldPlace()" (click)="clearPlace()" [value]="placeDisplay()" type="text" class="rounded-md text-gray-500 hover:text-black h-10 text-center mb-5">

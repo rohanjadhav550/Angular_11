@@ -14,13 +14,15 @@ export class DemoComp1Component implements OnInit {
   private altPlace: string = '';
   private givenName: string = '';
   private givenPlace: string = '';
+  public zoomVar: boolean = false;
 
   constructor() { }
   
   ngOnInit(): void {
     setTimeout(() => {
       this.visible = true;
-    }, 4000);
+      this.zoomVar = true;
+    }, 2000);
   }
   
   loadComponent(){
